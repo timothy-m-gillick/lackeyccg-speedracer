@@ -1,0 +1,138 @@
+<plugin>
+
+<playerstat>
+	<label>Speed Points</label>
+	<initialvalue>0</initialvalue>
+</playerstat>
+
+<deckzone>
+     <label>Driver Deck</label>
+     <gamezonetoloadto>Driver</gamezonetoloadto>
+     <shuffle>yes</shuffle>
+</deckzone>
+<deckzone>
+	<label>Racecar Deck</label>
+	<gamezonetoloadto>Racecar</gamezonetoloadto>
+	<shuffle>yes</shuffle>
+</deckzone>
+<deckzone>
+     <label>Equipment Deck</label>
+     <gamezonetoloadto>Equipment</gamezonetoloadto>
+     <shuffle>yes</shuffle>
+</deckzone>
+<deckzone>
+	<label>Action Deck</label>
+	<gamezonetoloadto>Action</gamezonetoloadto>
+	<shuffle>yes</shuffle>
+</deckzone>
+<deckzone>
+     <label>Episode Deck</label>
+     <gamezonetoloadto>Episode</gamezonetoloadto>
+     <shuffle>yes</shuffle>
+</deckzone>
+
+<gamezone>
+     <label>Hand</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>no</visibletoothers>
+</gamezone>
+
+<gamezone>
+     <label>Driver</label>
+     <isshared>yes</isshared>
+</gamezone>
+<gamezone>
+     <label>Racecar</label>
+     <isshared>yes</isshared>
+</gamezone><gamezone>
+     <label>Equipment</label>
+     <isshared>yes</isshared>
+</gamezone>
+<gamezone>
+     <label>Action</label>
+     <isshared>yes</isshared>
+</gamezone><gamezone>
+     <label>Episode</label>
+     <isshared>yes</isshared>
+</gamezone>
+
+<gamezone>
+     <label>Discard</label>
+     <visibletoowner>yes</visibletoowner>
+     <visibletoothers>yes</visibletoothers>
+     <isshared>yes</isshared>
+</gamezone>
+
+<phase><label>Draw Phase</label></phase>
+<phase><label>Threat Phase</label></phase>
+<phase><label>Speed Phase</label></phase>
+
+<generalfunction>
+	<label>Draw a Driver</label>
+	<kind>TRANSFERCARD</kind>
+	<sourceowner>shared</sourceowner>
+	<sourcegamezone>Driver</sourcegamezone>
+	<sourceposition>top</sourceposition>
+	<destinationowner>table</destinationowner>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+
+<generalfunction>
+	<label>Draw a Racecar</label>
+	<kind>TRANSFERCARD</kind>
+	<sourceowner>shared</sourceowner>
+	<sourcegamezone>Racecar</sourcegamezone>
+	<sourceposition>top</sourceposition>
+	<destinationowner>table</destinationowner>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+<generalfunction>
+	<label>Draw an Equipment Card</label>
+	<kind>TRANSFERCARD</kind>
+	<sourceowner>shared</sourceowner>
+	<sourcegamezone>Equipment</sourcegamezone>
+	<sourceposition>top</sourceposition>
+	<destinationowner>table</destinationowner>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+
+<generalfunction>
+	<label>Draw an Action Card</label>
+	<kind>TRANSFERCARD</kind>
+	<sourceowner>shared</sourceowner>
+	<sourcegamezone>Action</sourcegamezone>
+	<sourceposition>top</sourceposition>
+	<destinationgamezone>Hand</destinationgamezone>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+
+<generalfunction>
+	<label>Previous Phase</label>
+	<kind>PREVIOUSPHASE</kind>
+	<sourceowner>shared</sourceowner>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+<generalfunction>
+	<label>Next Phase</label>
+	<kind>NEXTPHASE</kind>
+	<sourceowner>shared</sourceowner>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+<generalfunction>
+	<label>Previous Turn</label>
+	<kind>PREVIOUSTURN</kind>
+	<sourceowner>shared</sourceowner>
+	<includeasbutton>yes</includeasbutton>
+</generalfunction>
+<generalfunction>
+	<label>Next Turn</label>
+	<kind>NEXTTURN</kind>
+	<sourceowner>shared</sourceowner>
+	<includeasbutton>yes</includeasbutton>
+
+</generalfunction>
+
+<generalfunction><label>Flip Coin</label><kind>FLIPCOIN</kind><includeasbutton>yes</includeasbutton></generalfunction>
+<generalfunction><label>Roll Die</label><kind>ROLLD6</kind><includeasbutton>yes</includeasbutton></generalfunction>
+
+</plugin>
