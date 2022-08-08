@@ -1,0 +1,7 @@
+SpeedRacer	08-03-22
+plugins/SpeedRacer/plugininfo.txt	https://github.com/timothy-m-gillick/lackeyccg-speedracer/raw/main/plugininfo.txt	364193
+plugins/SpeedRacer/sets/setimages/general/cardback.jpg	https://github.com/timothy-m-gillick/lackeyccg-speedracer/raw/main/cardback.jpg	372641
+plugins/SpeedRacer/sets/setimages/general/cardback-2.jpg	https://github.com/timothy-m-gillick/lackeyccg-speedracer/raw/main/cardback-2.jpg	385565
+
+CardGeneralURLs:		
+https://drive.google.com/drive/folders/1efchy_mtB-LRjxv_aboxcjveJQsecC13?usp=sharing
